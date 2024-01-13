@@ -21,6 +21,7 @@ const App = () => {
         <p id='tag1'>{quote}</p> 
     </div>
   );
+
 }
 
 export default App
