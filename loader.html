@@ -27,10 +27,64 @@
             100% {
                 transform: rotate(360deg);
             }
+
+            
+        }
+        .loading_new {
+            border: 2px solid green;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+        .loading_circle {
+            border: 2px solid green;
+            width: 100px;
+            height: 100px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+        .loading_new {
+            border: 2px solid green;
+            border-radius: ;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+
         }
     </style>
 </head>
 <body>
     <div class="loading"></div>
+    <div class="loading_new"></div>
+    <div class="loading_circle"></div>
+    <div class="loading_triangle"></div>
 </body>
 </html>
