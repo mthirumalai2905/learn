@@ -1,0 +1,12 @@
+/* App.css */
+
+.spline-container {
+  position: fixed;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  top: 30vh; /* Adjust this value to move it down */
+  width: 5550px;
+  overflow: hidden;
+ 
+}
