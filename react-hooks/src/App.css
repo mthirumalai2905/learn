@@ -1,0 +1,18 @@
+
+.container-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    height: 100vh;background-color: rgb(38, 4, 70);
+}
+.pack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: medium;
+    color: white;
+}
