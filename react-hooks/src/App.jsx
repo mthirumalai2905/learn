@@ -1,13 +1,16 @@
 // Importing the necessary dependencies from React
 import React, { useState, useEffect, useRef } from 'react';
 
+
 // Importing styles from the external CSS file
 import './App.css';
+
 
 // Declaring the functional component App
 const App = () => {
   // Using the useState hook to declare a state variable 'count' with an initial value of 0
   const [count, setCount] = useState(0);
+  
 
   // useRef hook to create a persistent flag variable
   const alertFlag = useRef(0);
@@ -21,6 +24,7 @@ const App = () => {
     }
   }, [count]); // Dependency array ensures the effect runs when count changes
 
+  
   // The return statement renders the JSX for your component
   return (
     <div>
