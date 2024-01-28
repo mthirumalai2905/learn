@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, #752f03, #FF536B);
+        }
+
+        .circle,
+        .circle2 {
+            position: absolute;
+            height: 1000px;
+            width: 2000px;
+            background-color: #12131E;
+            border-radius: 50%;
+        }
+
+        .circle {
+            border-top: none;
+            margin-top: 700px;
+            z-index: 2; /* Higher z-index to be on top */
+        }
+
+        .circle2 {
+            background-image: radial-gradient(circle, rgba(8, 89, 160, 0.5), transparent);
+            top: 50px;
+            z-index: 1; /* Lower z-index to be behind .circle */
+            filter: url('#radial-blur'); /* Reference the SVG filter */
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="circle2"></div>
+
+    <!-- SVG filter for radial blur with increased stdDeviation -->
+    <svg style="display: none;">
+        <defs>
+            <filter id="radial-blur">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="200" />
+            </filter>
+        </defs>
+    </svg>
+</body>
+</html>
