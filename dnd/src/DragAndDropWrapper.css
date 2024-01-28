@@ -1,0 +1,151 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the body height to 100% of the viewport height */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: hsl(209, 34%, 30%);
+}
+
+.section {
+  width: 90vw;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+.markdown {
+  padding: 4rem;
+  display: grid;
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.input, .result {
+  border-color: transparent;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  line-height: 2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  min-height: 30vh;
+  padding: 1rem 2rem;
+  transition: border-color 0.3s;
+  width: 100%; /* Make the input and result fields take 100% width */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.input:focus, .result:focus {
+  border-color: black;
+}
+
+@media screen and (min-width: 992px) {
+  .markdown {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+}
+
+/* unique styles */
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+blockquote {
+  font-size: 2rem;
+  font-style: italic;
+  border-left: 5px solid hsl(210, 22%, 49%);
+  color: hsl(210, 22%, 49%);
+  padding-left: 2rem;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+}
+
+blockquote::first-letter {
+  text-transform: uppercase;
+}
+
+pre {
+  background: #222;
+  display: inline-block;
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+  color: yellow;
+  margin-bottom: 1.5rem;
+}
+
+/* DragAndDropWrapper.css */
+
+/* Initial styles */
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 700px;
+  padding: 50px;
+  padding-left: 0px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+    gap: 20px; /* Adjust the gap between elements */
+  }
+}
+
+/* DragAndDropWrapper.css */
+
+/* Styles for the right container */
+.result {
+  border: 2px dashed #ccc;
+  padding: 16px;
+  overflow-y: auto; /* Add this line to enable vertical scrolling */
+}
+
+/* Add this line to ensure the entire container is scrollable if needed */
+.main {
+  padding: 10px;
+}
