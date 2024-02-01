@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: rgb(246, 50, 50);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #FAFAFA;
+    padding: 40px;
+}
+
+.intro {
+    display: inline-block;
+    vertical-align: top; /* Align the labels to the top of the input */
+    margin-bottom: 0; /* Remove default margin for better alignment */
+}
+
+.username,
+.password {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.submit {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(246, 50, 50);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+
+}
+
+h1 {
+    text-align: center;
+}
