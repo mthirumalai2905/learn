@@ -15,7 +15,7 @@ const App = () => {
     <p>{Counter}</p>
       <button className='button' onClick={handleCount}>Count</button>
       <div className='loader'></div>
-    
+      
     </div>
   )
 }
